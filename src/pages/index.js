@@ -45,12 +45,15 @@ const BlogIndex = ({ data, location }) => {
                       <span itemProp="headline">{title}</span>
                     </Link>
                   </h2>
-                  <small>
-                    <b>{teamDetails.name}</b> {post.frontmatter.date}
-                  </small>
-                  <small>
-                    {teamDetails.job_role}, {teamDetails.location}
-                  </small>
+                  <div>
+                    <small>
+                      <b>{teamDetails.name}</b> {post.frontmatter.date}
+                    </small>
+                  </div>
+                  <div>
+                    <small>{teamDetails.job_role}</small>
+                  </div>
+                  <div>{teamDetails.location}</div>
                 </header>
                 <section>
                   <p
