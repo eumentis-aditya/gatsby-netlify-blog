@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import teamDetails from "../../pages/about/team.json"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -44,7 +45,12 @@ const BlogIndex = ({ data, location }) => {
                       <span itemProp="headline">{title}</span>
                     </Link>
                   </h2>
-                  <small>{post.frontmatter.date}</small>
+                  <small>
+                    <b>{teamDetails.name}</b> {post.frontmatter.date}
+                  </small>
+                  <small>
+                    {teamDetails.job_role}, {teamDetails.location}
+                  </small>
                 </header>
                 <section>
                   <p

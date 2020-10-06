@@ -21,3 +21,13 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: "about"
+    label: "About Us"
+    files:
+      - name: "team"
+        label: "Our Team"
+        file: pages/about/team.json
+        fields:
+          - { label: "Name", name: "name", widget: "string" }
+          - { label: "Job Role", name: "job_role", widget: "string" }
+          - { label: "Location", name: "location", widget: "string" }
